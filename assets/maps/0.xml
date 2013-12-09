@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<map
+	name="Home"
+	tmxId="0"
+>
+	<npcs>
+		<objects>
+			<chest>
+				<name>Ned's Chest</name>
+				<position x="75" y="75" />
+				<items>
+					<sword type="old" />
+					<potion type="health" />
+					<potion type="mana" />
+				</items>
+				<onOpen>
+					<set type="npc" id="0001" action="setDialogue" value="1" />
+				</onOpen>
+			</chest>
+		</objects>
+		
+		<npc>
+			<id>0001</id>
+			<skin>development</skin>
+			<name>Ned</name>
+			
+			<talk>true</talk>
+			<walk>true</walk>
+			
+			<dialogue active="0">
+				<line index="0">Don't open my chest.</line>
+				<line index="1">Didn't I tell you not to open the chest?</line>
+			</dialogue>
+			
+			<path loop="true">
+				<position x="50" y="50" />
+				<position x="50" y="100" />
+				<position x="100" y="100" />
+				<position x="100" y="50" />
+			</path>
+		</npc>
+	</npcs>
+</map>

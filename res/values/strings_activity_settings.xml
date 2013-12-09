@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    
+    <string name="pref_header_debug">Debug</string>
+    <string name="pref_no_collisions">No collisions</string>
+    <string name="pref_description_no_collisions">Turn off collision detection.</string>
+    
+    
+
+</resources>

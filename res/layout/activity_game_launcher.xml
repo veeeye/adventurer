@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GameLauncherActivity" >
+
+    <ListView
+        android:id="@+id/characterList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newCharacterButton"
+        android:layout_alignParentTop="true"
+        android:background="@color/black"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/newCharacterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/black_border_top"
+        android:textColor="@color/black"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:text="@string/create_a_new_character" />
+
+</RelativeLayout>
